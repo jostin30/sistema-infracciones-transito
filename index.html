@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Sistema de Infracciones de Tránsito</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>Sistema de Gestión de Infracciones</h1>
 <p>Registro de infracciones con validación</p>
-<form>
-<label>Cédula:</label><input type="text" placeholder="001-0000000-0"><br><br>
-<label>Placa:</label><input type="text" placeholder="A123456"><br><br>
+<form onsubmit="return validar()">
+<label>Cédula:</label><input id="cedula" type="text" placeholder="001-0000000-0"><br><br>
+<label>Placa:</label><input id="placa" type="text" placeholder="A123456"><br><br>
 <label>Tipo de infracción:</label>
 <select>
 <option>Exceso de velocidad</option>
@@ -19,5 +20,6 @@
 </select><br><br>
 <button>Registrar Infracción</button>
 </form>
+<script src="script.js"></script>
 </body>
 </html>
